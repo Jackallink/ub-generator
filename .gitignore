@@ -1,0 +1,11 @@
+# log
+logs/
+
+# data
+data/
+
+# pycache
+__pycache__/
+models/__pycache__
+simulator/__pycache__
+utils/__pycache__

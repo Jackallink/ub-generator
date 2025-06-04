@@ -67,12 +67,9 @@ class HRSystemSimulator:
     def _process_resignation_application(self, employee):
         """处理单个员工的离职申请"""
         resignation_type = random.choice(["主动离职", "被动离职"])
-        resignation_reasons = ["个人发展", "薪酬待遇", "工作环境", "家庭原因", "健康原因", "继续深造", "公司调整"]
         
-        employee.initiate_resignation(
-            resignation_type=resignation_type,
-            reason=random.choice(resignation_reasons)
-        )
+        # 不直接传递reason参数，让Employee类自己根据resignation_type选择
+        employee.initiate_resignation(resignation_type=resignation_type)
         
         # 记录离职申请日志
         logger_manager.log_hr_record(

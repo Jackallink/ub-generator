@@ -15,7 +15,7 @@ __copyright__ = "Copyright (c) 2024 Enterprise Security Team"
 # 版本历史
 VERSION_HISTORY = {
     "1.0.0": {
-        "release_date": "2024-12-20",
+        "release_date": "2025-06-04",
         "major_features": [
             "完整的用户关联性保证 - 100%用户ID关联性",
             "真实的时间逻辑序列 - 工作日时间线模拟",
@@ -44,7 +44,7 @@ VERSION_HISTORY = {
 
 # 系统兼容性信息
 COMPATIBILITY = {
-    "python_version": ">=3.7",
+    "python_version": ">=3.10",
     "operating_systems": ["Windows", "Linux", "macOS"],
     "dependencies": {
         "pandas": ">=1.3.0",
